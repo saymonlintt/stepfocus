@@ -57,7 +57,7 @@ expo-location
 
 expo-task-manager
 
-expo-background-fetch
+expo-background-task
 
 Motivo:
 
