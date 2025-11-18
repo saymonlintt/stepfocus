@@ -2,12 +2,15 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import AppNavigator from './src/navigation/Appnavigator';
+import { GoalProvider } from './src/context/GoalContext';
 
 export default function App() {
   return (
-    <NavigationContainer>
-      <AppNavigator />
-    </NavigationContainer>
+    <GoalProvider>
+      <NavigationContainer>
+        <AppNavigator />
+      </NavigationContainer>
+    </GoalProvider>
   );
 }
 
